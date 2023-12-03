@@ -26,7 +26,7 @@ maxi.log("error", "This is an error message.");
 maxi.log("verbose", "This is a verbose message.");
 
 // you can colorize text also.
-logger.log("info", maxi.colorize("cyan", "This is a cyan message."));
+maxi.log("info", maxi.colorize("cyan", "This is a cyan message."));
 ````
 
 Each level is associated with a different color:
