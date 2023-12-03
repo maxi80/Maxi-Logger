@@ -19,11 +19,14 @@ const logger = require('maxi-logger');
 Then, you can use the logger to log messages at different levels:
 
 ```node
-logger.info('This is an informational message');
-logger.warn('This is a warning');
-logger.error('This is an error message');
-logger.success('This is a success message');
-logger.verbose('This is a verbose message');
+logger.log("success", "This is a success message.");
+logger.log("info", "This is an info message.");
+logger.log("warn", "This is a warning message.");
+logger.log("error", "This is an error message.");
+logger.log("verbose", "This is a verbose message.");
+
+// you can colorize text also.
+logger.log("info", logger.colorize("cyan", "This is a cyan message."));
 ````
 
 Each level is associated with a different color:
