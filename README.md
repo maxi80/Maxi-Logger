@@ -13,20 +13,20 @@ npm install maxi-logger
 First, require the package in your file:
 
 ```node
-const logger = require('maxi-logger');
+const maxi = require('maxi-logger');
 ```
 
 Then, you can use the logger to log messages at different levels:
 
 ```node
-logger.log("success", "This is a success message.");
-logger.log("info", "This is an info message.");
-logger.log("warn", "This is a warning message.");
-logger.log("error", "This is an error message.");
-logger.log("verbose", "This is a verbose message.");
+maxi.log("success", "This is a success message.");
+maxi.log("info", "This is an info message.");
+maxi.log("warn", "This is a warning message.");
+maxi.log("error", "This is an error message.");
+maxi.log("verbose", "This is a verbose message.");
 
 // you can colorize text also.
-logger.log("info", logger.colorize("cyan", "This is a cyan message."));
+logger.log("info", maxi.colorize("cyan", "This is a cyan message."));
 ````
 
 Each level is associated with a different color:
